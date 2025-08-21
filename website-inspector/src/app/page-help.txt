@@ -1,0 +1,1 @@
+This app provides Website Inspector functionality.
