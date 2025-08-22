@@ -1,0 +1,54 @@
+:root{--wt-accent:#6C47FF;--wt-bg:#ffffff;--wt-text:#0f172a;--wt-muted:#6b7280;--wt-border:#e5e7eb;--wt-panel-w:360px;--wt-radius:14px;}
+.wt-reset, .wt-reset *{box-sizing:border-box;}
+.wt-hidden{display:none !important;}
+
+/* Docked container */
+.wt-dock{position:fixed; top:0; right:0; width:var(--wt-panel-w); height:100vh; z-index:2147483000; display:flex; flex-direction:column; background:var(--wt-bg); color:var(--wt-text); border-left:1px solid var(--wt-border); box-shadow:-8px 0 24px rgba(0,0,0,.08);} 
+.wt-topbar{position:sticky; top:0; z-index:2; display:flex; align-items:center; justify-content:space-between; padding:12px 14px; border-bottom:1px solid var(--wt-border); background:var(--wt-bg);} 
+.wt-title{display:flex; align-items:center; gap:10px; font-weight:600; font-size:16px;}
+.wt-badge{font-size:11px; padding:2px 8px; border-radius:999px; background:#111827; color:#fff; opacity:.9}
+.wt-actions{display:flex; gap:8px}
+.wt-icon-btn{border:1px solid var(--wt-border); background:#fff; border-radius:10px; width:32px; height:32px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer;}
+.wt-icon-btn:hover{background:#f8fafc}
+
+.wt-body{flex:1; overflow:auto; padding:12px;}
+
+/* Step cards */
+.wt-step{border:1px solid var(--wt-border); border-radius:12px; margin-bottom:10px; overflow:hidden; background:#fff;}
+.wt-step-h{display:flex; align-items:center; justify-content:space-between; padding:12px 12px; cursor:pointer;}
+.wt-step-h h3{margin:0; font-size:15px; font-weight:600}
+.wt-chip{border-radius:999px; padding:2px 8px; font-size:11px; border:1px solid var(--wt-border); color:#111827; background:#f8fafc}
+.wt-chip.active{background:#111827; color:#fff}
+.wt-chip.done{background:#e8f5e9; color:#065f46; border-color:#cde8d6}
+.wt-step-c{padding:12px; border-top:1px solid var(--wt-border)}
+
+/* Buttons */
+.wt-btn{display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius:12px; border:1px solid var(--wt-border); background:#fff; cursor:pointer; font-weight:600}
+.wt-btn.primary{background:var(--wt-accent); color:#fff; border-color:transparent}
+.wt-btn.ghost{background:#fff}
+.wt-btn.block{width:100%; justify-content:center}
+.wt-btn.active{box-shadow: inset 0 0 0 2px #00000020}
+.wt-btn:disabled{opacity:.5; cursor:not-allowed}
+
+/* Translation List panel */
+.wt-list{position:fixed; right:0; top:100vh; width:var(--wt-panel-w); max-height:55vh; transform:translateY(-100%); background:#fff; border-left:1px solid var(--wt-border); border-top:1px solid var(--wt-border); box-shadow:-8px -8px 24px rgba(0,0,0,.08); z-index:2147482999; display:flex; flex-direction:column;}
+.wt-list-h{position:sticky; top:0; background:#fff; z-index:1; border-bottom:1px solid var(--wt-border); padding:10px 12px; display:grid; grid-template-columns:1fr 1fr auto; gap:8px; font-weight:600}
+.wt-list-h .col{font-size:12px; color:#334155}
+.wt-list-rows{overflow:auto;}
+.wt-row{display:grid; grid-template-columns:1fr 1fr auto; gap:8px; padding:10px 12px; border-bottom:1px solid var(--wt-border); align-items:start}
+.wt-row:hover{background:#f8fafc}
+.wt-src{font-size:12px; color:#111827}
+.wt-type{display:inline-block; font-size:10px; padding:2px 6px; border-radius:999px; background:#eef2ff; color:#4338ca; margin-left:6px}
+.wt-input{width:100%; resize:vertical; min-height:28px; font-size:12px; padding:6px 8px; border:1px solid var(--wt-border); border-radius:8px}
+.wt-row-actions{display:flex; gap:6px}
+.wt-trash{background:#fee2e2; border:1px solid #fecaca; color:#991b1b; border-radius:8px; padding:6px; cursor:pointer}
+
+/* Toolbar */
+.wt-toolbar{position:fixed; left:50%; transform:translateX(-50%); top:8px; z-index:2147483001; display:flex; gap:8px; background:#fff; border:1px solid var(--wt-border); border-radius:999px; padding:6px 8px; box-shadow:0 6px 18px rgba(0,0,0,.1)}
+.wt-seg{display:inline-flex; border:1px solid var(--wt-border); border-radius:10px; overflow:hidden}
+.wt-seg button{padding:6px 10px; border:0; background:#fff; cursor:pointer; font-size:12px}
+.wt-seg button.active{background:#111827; color:#fff}
+
+/* Highlighter */
+.wt-highlight{position:absolute; border:2px solid var(--wt-accent); background:rgba(108,71,255,.08); pointer-events:none; z-index:2147483002}
+.wt-inline-editor{position:absolute; z-index:2147483003; background:#fff; border:1px solid var(--wt-border); padding:8px; border-radius:10px; box-shadow:0 8px 24px rgba(0,0,0,.12)}

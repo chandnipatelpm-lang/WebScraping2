@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Website Translator Plugin Demo</title>
+	<link rel="stylesheet" href="./src/translator-plugin.css">
+	<style>
+		body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.5; }
+		main { max-width: 860px; margin: 40px auto; padding: 0 16px; }
+		h1 { font-size: 32px; margin: 24px 0 8px; }
+		p { margin: 12px 0; }
+		section.demo { margin-top: 24px; }
+		.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+		.card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+		ul { padding-left: 18px; }
+		footer { height: 40vh; }
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Sample Marketing Page</h1>
+		<p>This page exists to demonstrate the right-docked Website Translator plugin. Scroll around, and try extracting text.</p>
+
+		<section class="demo grid">
+			<div class="card">
+				<h2>Why choose our product?</h2>
+				<p>It is fast, reliable, and delightful to use.</p>
+				<ul>
+					<li>Performance you can trust</li>
+					<li>Security by default</li>
+					<li>Great developer experience</li>
+				</ul>
+			</div>
+			<div class="card">
+				<h2>Customer quotes</h2>
+				<p>“This tool changed the way we work.”</p>
+				<p>“Setup took less than five minutes.”</p>
+				<a href="#" aria-label="Learn more about pricing">Learn more</a>
+			</div>
+		</section>
+
+		<section class="card" style="margin-top: 24px;">
+			<h2>Longer paragraph</h2>
+			<p>
+				Our platform provides a unified workflow for teams to create, review, and publish features.
+				From design to production, everything stays in sync and accessible.
+			</p>
+		</section>
+
+		<footer></footer>
+	</main>
+
+	<script src="./src/translator-plugin.js"></script>
+	<script>
+		window.WebTranslator.mount();
+	</script>
+</body>
+</html>
